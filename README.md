@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AccesPoint
 
-## Getting Started
+**AccesPoint** es una plataforma desarrollada con Next.js para gestionar el control de acceso del personal en una organización. El sistema permite registrar, visualizar y organizar entradas y salidas del personal, así como asignar turnos de manera eficiente a través de una interfaz moderna y responsiva.
 
-First, run the development server:
+Este proyecto fue bootstrapped con [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+---
+
+## 🚀 Comenzar
+
+Primero, instala las dependencias y ejecuta el servidor de desarrollo:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Luego abre http://localhost:3000 en tu navegador para ver la aplicación.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Puedes comenzar a editar el contenido modificando el archivo app/page.js
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🛠️ Tecnologías usadas
+Next.js – Framework de React para aplicaciones web
 
-## Learn More
+React – Librería para construir interfaces
 
-To learn more about Next.js, take a look at the following resources:
+Tailwind CSS
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+accespoint/
+├── components/
+├── public/
+├── package.json
+├── README.md
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Felipe Higuera Tovar
+Estudiante de Ingeniería de Sistemas 
+GitHub: @felipehigue
