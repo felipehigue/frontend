@@ -13,10 +13,12 @@ Primero, instala las dependencias y ejecuta el servidor de desarrollo:
 ```bash
 npm install
 npm run dev
+--
 
 Luego abre http://localhost:3000 en tu navegador para ver la aplicación.
 
 Puedes comenzar a editar el contenido modificando el archivo app/page.js
+
 
 🛠️ Tecnologías usadas
 Next.js – Framework de React para aplicaciones web
