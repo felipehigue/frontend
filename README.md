@@ -20,7 +20,7 @@ Luego abre http://localhost:3000 en tu navegador para ver la aplicación.
 Puedes comenzar a editar el contenido modificando el archivo app/page.js
 
 
-🛠️ Tecnologías usadas
+## 🛠️ Tecnologías usadas
 Next.js – Framework de React para aplicaciones web
 
 React – Librería para construir interfaces
