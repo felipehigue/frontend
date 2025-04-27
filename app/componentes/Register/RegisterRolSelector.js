@@ -1,21 +1,25 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
-export default function RegisterRoleSelector() {
+const rolesConfig = [ // Definimos el array roles fuera del componente
+  { icon: '🏠', name: 'Cliente', backendValue: 'user', description: 'Compra y gestiona productos inteligentes para tu hogar' },
+  { icon: '🛠️', name: 'Instalador', backendValue: 'admin', description: 'Ofrece servicios de instalación y mantenimiento' },
+  { icon: '🏢', name: 'Empresa', backendValue: 'user', description: 'Soluciones para negocios y proyectos a gran escala' }
+];
+
+export default function RegisterRoleSelector({ onRoleChange }) {
   const [selectedRole, setSelectedRole] = useState('Cliente');
-  
-  const roles = [
-    { icon: '🏠', name: 'Cliente', description: 'Compra y gestiona productos inteligentes para tu hogar' },
-    { icon: '🛠️', name: 'Instalador', description: 'Ofrece servicios de instalación y mantenimiento' },
-    { icon: '🏢', name: 'Empresa', description: 'Soluciones para negocios y proyectos a gran escala' }
-  ];
+
+  useEffect(() => {
+    onRoleChange(rolesConfig.find(role => role.name === selectedRole)?.backendValue || 'user');
+  }, [selectedRole, onRoleChange]); // roles ya no es una dependencia porque su referencia no cambia
 
   return (
     <div className="mb-5">
       <label className="block mb-2 font-medium text-gray-800">Selecciona tu rol</label>
       <div className="flex flex-wrap gap-4 mt-2">
-        {roles.map((role) => (
+        {rolesConfig.map((role) => (
           <div
             key={role.name}
             onClick={() => setSelectedRole(role.name)}

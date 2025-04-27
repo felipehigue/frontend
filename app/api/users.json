@@ -1,0 +1,34 @@
+[
+  {
+    "id": "1",
+    "name": "Usuario",
+    "apellidos": "Uno",
+    "email": "usuario1@example.com",
+    "password": "password123",
+    "role": "user"
+  },
+  {
+    "id": "2",
+    "name": "Administrador",
+    "apellidos": "Dos",
+    "email": "admin@example.com",
+    "password": "adminpass",
+    "role": "admin"
+  },
+  {
+    "id": "95290b1f-72f6-4209-9f6a-c5dc42bd1afc",
+    "name": "felipe",
+    "apellidos": "higuera",
+    "email": "felipehiguera27@gmail.com",
+    "password": "Andrestigre3",
+    "role": "user"
+  },
+  {
+    "id": "6e6f017c-5c29-4f3e-bec5-1b73588beaa5",
+    "name": "andres",
+    "apellidos": "López",
+    "email": "lopezandrea@gmail.com",
+    "password": "123456",
+    "role": "admin"
+  }
+]
